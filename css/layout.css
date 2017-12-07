@@ -1,0 +1,59 @@
+.home .place{
+    float: left;
+    width: 50%;
+    padding-bottom: 3em
+}
+
+.home .googleMap{
+    clear: both;
+}
+
+@supports (grid-area: auto) {
+
+    @media (min-width: 600px) {
+        .home .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            grid-template-areas:
+                "hero hero"
+                "title title"
+                "text places"
+                "map places";
+
+        }
+
+        .home .hero{
+            grid-area: hero;
+        }
+
+        .home .title{
+            grid-area: title;
+        }
+
+        .home .text{
+            grid-area: text;
+        }
+
+        .home .places{
+            grid-area: places;
+        }
+
+        .home .googleMap{
+            grid-area: map;
+        }
+
+        .home .place{
+            float: none;
+            width: auto;
+            padding-bottom: 3em;
+        }
+  }
+
+    @media (min-width: 900px) {
+
+    }
+
+
+}
+/*end @supports*/
