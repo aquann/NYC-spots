@@ -1,17 +1,19 @@
-.home .place{
+
+
+.homePage .place{
     float: left;
     width: 50%;
     padding-bottom: 3em
 }
 
-.home .googleMap{
+.homePage .googleMap{
     clear: both;
 }
 
 @supports (grid-area: auto) {
 
     @media (min-width: 600px) {
-        .home .content{
+        .homePage .content{
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
@@ -22,28 +24,43 @@
                 "map places";
 
         }
+    }
 
-        .home .hero{
+        @media (min-width: 900px){
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
+
+
+         @media (min-width: 1200px){
+            display:grid
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
+
+        .homePage .hero{
             grid-area: hero;
         }
 
-        .home .title{
+        .homePage .title{
             grid-area: title;
         }
 
-        .home .text{
+        .homePage .text{
             grid-area: text;
         }
 
-        .home .places{
+        .homePage .places{
             grid-area: places;
         }
 
-        .home .googleMap{
+        .homePage .googleMap{
             grid-area: map;
         }
 
-        .home .place{
+        .homePage .place{
             float: none;
             width: auto;
             padding-bottom: 3em;
