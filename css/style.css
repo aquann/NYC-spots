@@ -10,13 +10,12 @@
     padding: 15px;
 }
 
-@media(min-width: 600px){
-    .nav {
+/*=============== Base NAV Style ==========*/
+ .nav {
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
     background-color: #f1f1f1;
 }
 
@@ -31,6 +30,38 @@
     background-color: #555;
     color: white;
 }
+
+.menu{
+    background-color: #555;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menu a:hover{
+    color: bisque;
+}
+
+@media(min-width: 620px){
+/*    remove menu button*/
+    .menu{
+        display: none;
+    }
+/*      display nav as horizontal, left align*/
+    .nav li{
+        display: block;
+        text-align: left;
+    }
+    .nav li{
+        display: inline-block;
+    }
 }
 
 /*end of media@ for nav */
