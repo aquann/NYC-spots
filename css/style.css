@@ -1,23 +1,45 @@
-.text p{
-    font-family:sans-serif;
-    font-size: 20pt;
+.hero image {
+    align-content: center;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: crimson;
+    font-family: serif;
+    font-style: italic;
+}
+
+.text p {
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
 
 }
 
 .logo {
+    text-align: center;
     border: 1px solid black;
-    background-color: beige;
+    background-color: blanchedalmond;
     border: 3px solid grey;
     padding: 15px;
 }
 
 /*=============== Base NAV Style ==========*/
- .nav {
+
+.nav {
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    font-size: 12pt;
+    line-height: 1;
+    margin: 1.5em 0 0.25em 0;
+
 }
 
 .nav li a {
@@ -32,35 +54,35 @@
     color: white;
 }
 
-.menu{
+.menu {
     background-color: #555;
     padding: 10px;
     color: white;
     text-align: center;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
 
 
 }
 
-.menu a:hover{
+.menu a:hover {
     color: bisque;
 }
 
-@media(min-width: 620px){
-/*    remove menu button*/
-    .menu{
+@media(min-width: 620px) {
+    /*    remove menu button*/
+    .menu {
         display: none;
     }
-/*      display nav as horizontal, left align*/
-    .nav li{
+    /*      display nav as horizontal, left align*/
+    .nav li {
         display: block;
         text-align: left;
     }
-    .nav li{
+    .nav li {
         display: inline-block;
     }
 }
@@ -108,6 +130,10 @@ video {
     height: 100%;
 }
 
-.footer{
+.footer {
     text-align: center;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border: 3px solid grey;
+    padding: 15px;
 }
