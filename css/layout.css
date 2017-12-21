@@ -17,9 +17,9 @@
     @media (min-width: 600px) {
 
         .placePage .text {
-            -moz-column-count: 2;
-            -webkit-column-count: 2;
-            column-count: 2;
+            -moz-column-count: 22;
+            -webkit-column-count: 4;
+            column-count: 4;
         }
 
         /*Remove float styling*/
@@ -74,6 +74,11 @@
 
         }
 
+        .placePage .text {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
     }
 
 
