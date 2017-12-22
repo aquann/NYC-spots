@@ -1,5 +1,5 @@
 .hero {
-     text-align: center;
+    text-align: center;
     margin: auto;
 }
 
@@ -131,8 +131,6 @@ video {
 
 .footer {
     text-align: center;
-    border: 1px solid black;
     background-color: blanchedalmond;
-    border: 3px solid grey;
     padding: 15px;
 }
